@@ -220,5 +220,20 @@ namespace GiftlyAdmin
                 new AdminScreen().Show();
                 this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quantityInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

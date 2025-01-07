@@ -53,6 +53,7 @@ namespace GiftlyAdmin
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.recipientsSearch = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.recipientDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace GiftlyAdmin
             // recipientDataGridView
             // 
             this.recipientDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.recipientDataGridView.BackgroundColor = System.Drawing.Color.Crimson;
             this.recipientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.recipientDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colRecipient,
@@ -69,69 +71,86 @@ namespace GiftlyAdmin
             this.colBudget,
             this.colAddress,
             this.colContactNumber});
-            this.recipientDataGridView.Location = new System.Drawing.Point(27, 61);
+            this.recipientDataGridView.Location = new System.Drawing.Point(36, 209);
+            this.recipientDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.recipientDataGridView.Name = "recipientDataGridView";
-            this.recipientDataGridView.Size = new System.Drawing.Size(1015, 228);
+            this.recipientDataGridView.RowHeadersWidth = 51;
+            this.recipientDataGridView.Size = new System.Drawing.Size(1353, 281);
             this.recipientDataGridView.TabIndex = 0;
             this.recipientDataGridView.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.recipientDataGridView_RowHeaderMouseDoubleClick);
             // 
             // colRecipient
             // 
             this.colRecipient.HeaderText = "ID";
+            this.colRecipient.MinimumWidth = 6;
             this.colRecipient.Name = "colRecipient";
             // 
             // colRecipientName
             // 
             this.colRecipientName.HeaderText = "Recipient";
+            this.colRecipientName.MinimumWidth = 6;
             this.colRecipientName.Name = "colRecipientName";
             // 
             // colGifterName
             // 
             this.colGifterName.HeaderText = "Gifter";
+            this.colGifterName.MinimumWidth = 6;
             this.colGifterName.Name = "colGifterName";
             // 
             // colRelationship
             // 
             this.colRelationship.HeaderText = "Relationship";
+            this.colRelationship.MinimumWidth = 6;
             this.colRelationship.Name = "colRelationship";
             // 
             // colBudget
             // 
             this.colBudget.HeaderText = "Budget";
+            this.colBudget.MinimumWidth = 6;
             this.colBudget.Name = "colBudget";
             // 
             // colAddress
             // 
             this.colAddress.HeaderText = "Address";
+            this.colAddress.MinimumWidth = 6;
             this.colAddress.Name = "colAddress";
             // 
             // colContactNumber
             // 
             this.colContactNumber.HeaderText = "Contact Number";
+            this.colContactNumber.MinimumWidth = 6;
             this.colContactNumber.Name = "colContactNumber";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 45);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(28, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(220, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Recipients";
             // 
             // logOutBtn
             // 
-            this.logOutBtn.Location = new System.Drawing.Point(27, 12);
+            this.logOutBtn.BackColor = System.Drawing.Color.White;
+            this.logOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutBtn.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutBtn.Location = new System.Drawing.Point(1206, 46);
+            this.logOutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.Size = new System.Drawing.Size(75, 23);
+            this.logOutBtn.Size = new System.Drawing.Size(183, 38);
             this.logOutBtn.TabIndex = 2;
             this.logOutBtn.Text = "Log out";
-            this.logOutBtn.UseVisualStyleBackColor = true;
+            this.logOutBtn.UseVisualStyleBackColor = false;
             this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
             // 
             // ordersDataGridView
             // 
             this.ordersDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ordersDataGridView.BackgroundColor = System.Drawing.Color.Crimson;
             this.ordersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colOrderId,
@@ -142,99 +161,134 @@ namespace GiftlyAdmin
             this.colItemQuantity,
             this.colTotal,
             this.colStatus});
-            this.ordersDataGridView.Location = new System.Drawing.Point(27, 328);
+            this.ordersDataGridView.Location = new System.Drawing.Point(36, 597);
+            this.ordersDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ordersDataGridView.Name = "ordersDataGridView";
-            this.ordersDataGridView.Size = new System.Drawing.Size(1015, 228);
+            this.ordersDataGridView.RowHeadersWidth = 51;
+            this.ordersDataGridView.Size = new System.Drawing.Size(1353, 273);
             this.ordersDataGridView.TabIndex = 3;
             // 
             // colOrderId
             // 
             this.colOrderId.HeaderText = "ID";
+            this.colOrderId.MinimumWidth = 6;
             this.colOrderId.Name = "colOrderId";
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Recipient";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Gifter";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // colItemName
             // 
             this.colItemName.HeaderText = "Item name";
+            this.colItemName.MinimumWidth = 6;
             this.colItemName.Name = "colItemName";
             // 
             // colItemPrice
             // 
             this.colItemPrice.HeaderText = "Price";
+            this.colItemPrice.MinimumWidth = 6;
             this.colItemPrice.Name = "colItemPrice";
             // 
             // colItemQuantity
             // 
             this.colItemQuantity.HeaderText = "Quantity";
+            this.colItemQuantity.MinimumWidth = 6;
             this.colItemQuantity.Name = "colItemQuantity";
             // 
             // colTotal
             // 
             this.colTotal.HeaderText = "Total";
+            this.colTotal.MinimumWidth = 6;
             this.colTotal.Name = "colTotal";
             // 
             // colStatus
             // 
             this.colStatus.HeaderText = "Order status";
+            this.colStatus.MinimumWidth = 6;
             this.colStatus.Name = "colStatus";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 309);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(28, 528);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(148, 46);
             this.label2.TabIndex = 4;
             this.label2.Text = "Orders";
             // 
             // ordersSearch
             // 
-            this.ordersSearch.Location = new System.Drawing.Point(849, 302);
+            this.ordersSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ordersSearch.Location = new System.Drawing.Point(1134, 552);
+            this.ordersSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ordersSearch.Multiline = true;
             this.ordersSearch.Name = "ordersSearch";
-            this.ordersSearch.Size = new System.Drawing.Size(192, 20);
+            this.ordersSearch.Size = new System.Drawing.Size(255, 22);
             this.ordersSearch.TabIndex = 5;
             this.ordersSearch.TextChanged += new System.EventHandler(this.ordersSearch_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(802, 307);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1057, 554);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(55, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Search";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(803, 40);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1057, 167);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(55, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Search";
             // 
             // recipientsSearch
             // 
-            this.recipientsSearch.Location = new System.Drawing.Point(850, 35);
+            this.recipientsSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.recipientsSearch.Location = new System.Drawing.Point(1134, 162);
+            this.recipientsSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.recipientsSearch.Name = "recipientsSearch";
-            this.recipientsSearch.Size = new System.Drawing.Size(192, 20);
+            this.recipientsSearch.Size = new System.Drawing.Size(255, 22);
             this.recipientsSearch.TabIndex = 7;
             this.recipientsSearch.TextChanged += new System.EventHandler(this.recipientsSearch_TextChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.Location = new System.Drawing.Point(449, 38);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(477, 53);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "ADMIN DASHBOARD";
+            // 
             // AdminScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 578);
+            this.ClientSize = new System.Drawing.Size(1419, 994);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.recipientsSearch);
             this.Controls.Add(this.label3);
@@ -244,6 +298,7 @@ namespace GiftlyAdmin
             this.Controls.Add(this.logOutBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.recipientDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminScreen";
             this.Text = "AdminScreen";
             this.Load += new System.EventHandler(this.AdminScreen_Load);
@@ -280,5 +335,6 @@ namespace GiftlyAdmin
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox recipientsSearch;
+        private System.Windows.Forms.Label label5;
     }
 }

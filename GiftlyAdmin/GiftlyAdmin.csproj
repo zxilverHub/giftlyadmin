@@ -130,6 +130,8 @@
     <Compile Include="SetOrder.Designer.cs">
       <DependentUpon>SetOrder.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\giftly logo.png" />
     <EmbeddedResource Include="AdminScreen.resx">
       <DependentUpon>AdminScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +152,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
